@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Convai_NPC_Coyote
       objectReference: {fileID: 0}
+    - target: {fileID: 6815894930913663776, guid: b93323c2ed13e6c48b362bf8aebe0b00, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8822856524245562032, guid: b93323c2ed13e6c48b362bf8aebe0b00, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

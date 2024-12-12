@@ -20,7 +20,7 @@ namespace Convai.Scripts.Runtime.Addons
         /// </summary>
         private void Start()
         {
-            ConvaiInputManager.Instance.GetTalkKeyAction().started += ConvaiInputManager_TalkKeyActionStarted;
+            // ConvaiInputManager.Instance.GetTalkKeyAction().started += ConvaiInputManager_TalkKeyActionStarted;
         }
 
         /// <summary>
@@ -28,7 +28,7 @@ namespace Convai.Scripts.Runtime.Addons
         /// </summary>
         private void OnDestroy()
         {
-            ConvaiInputManager.Instance.GetTalkKeyAction().started -= ConvaiInputManager_TalkKeyActionStarted;
+            // ConvaiInputManager.Instance.GetTalkKeyAction().started -= ConvaiInputManager_TalkKeyActionStarted;
         }
 
         /// <summary>

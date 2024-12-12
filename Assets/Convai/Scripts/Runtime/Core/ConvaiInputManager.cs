@@ -26,7 +26,7 @@ namespace Convai.Scripts.Runtime.Core
         public bool IsTalkKeyHeld { get; private set; }
         public Action<bool> talkKeyInteract;
 
-#if ENABLE_INPUT_SYSTEM
+/*#if ENABLE_INPUT_SYSTEM
         private Controls _controls;
 #elif ENABLE_LEGACY_INPUT_MANAGER
         [Serializable]
@@ -49,7 +49,14 @@ namespace Convai.Scripts.Runtime.Core
         {
             return Input.GetKeyDown(TalkKey);
         }
-#endif
+#endif*/
+
+        public bool WasTalkKeyPressed()
+        {
+            return OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) || OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger);
+        }
+
+        
 
         public static ConvaiInputManager Instance { get; private set; }
 
@@ -68,18 +75,18 @@ namespace Convai.Scripts.Runtime.Core
 
         private void OnEnable()
         {
-#if ENABLE_INPUT_SYSTEM
+/*#if ENABLE_INPUT_SYSTEM
             _controls = new Controls();
             _controls.Player.SetCallbacks(this);
             _controls.Enable();
-#endif
+#endif*/
         }
 
         private void OnDisable()
         {
-#if ENABLE_INPUT_SYSTEM
+/*#if ENABLE_INPUT_SYSTEM
             _controls.Disable();
-#endif
+#endif*/
         }
 
 #if ENABLE_INPUT_SYSTEM
@@ -144,7 +151,7 @@ namespace Convai.Scripts.Runtime.Core
 
         private void Update()
         {
-#if ENABLE_INPUT_SYSTEM
+/*#if ENABLE_INPUT_SYSTEM
             if (_controls.Player.MousePress.WasPressedThisFrame() && !EventSystem.current.IsPointerOverGameObject()) LockCursor(true);
             if (_controls.Player.CursorUnlock.WasPressedThisFrame()) LockCursor(false);
 #elif ENABLE_LEGACY_INPUT_MANAGER
@@ -177,7 +184,19 @@ namespace Convai.Scripts.Runtime.Core
                 talkKeyInteract?.Invoke(false);
                 IsTalkKeyHeld = false;
             }
-#endif
+#endif*/
+            if (OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger) ||
+                OVRInput.GetDown(OVRInput.RawButton.LIndexTrigger))
+            {
+                talkKeyInteract?.Invoke(true);
+                IsTalkKeyHeld = true;
+            }
+
+            if (OVRInput.GetUp(OVRInput.RawButton.RIndexTrigger) || OVRInput.GetUp(OVRInput.RawButton.LIndexTrigger))
+            {
+                talkKeyInteract?.Invoke(false);
+                IsTalkKeyHeld = false;
+            }
         }
 
         private static void LockCursor(bool lockState)
@@ -186,11 +205,11 @@ namespace Convai.Scripts.Runtime.Core
             Cursor.visible = !lockState;
         }
 
-#if ENABLE_INPUT_SYSTEM
+/*#if ENABLE_INPUT_SYSTEM
         public InputAction GetTalkKeyAction()
         {
             return _controls.Player.Talk;
         }
-#endif
+#endif*/
     }
 }
