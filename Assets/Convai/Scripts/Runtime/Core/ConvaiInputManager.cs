@@ -197,6 +197,11 @@ namespace Convai.Scripts.Runtime.Core
                 talkKeyInteract?.Invoke(false);
                 IsTalkKeyHeld = false;
             }
+            
+            if (OVRInput.GetDown(OVRInput.RawButton.A) || OVRInput.GetDown(OVRInput.RawButton.X))
+            {
+                toggleSettings?.Invoke();
+            }
         }
 
         private static void LockCursor(bool lockState)

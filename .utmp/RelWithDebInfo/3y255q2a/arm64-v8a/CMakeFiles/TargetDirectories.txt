@@ -1,0 +1,5 @@
+C:/Projects/UnityProjects/XR Bootcamp/Prototype - Week1 (Convai)/.utmp/RelWithDebInfo/3y255q2a/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Projects/UnityProjects/XR Bootcamp/Prototype - Week1 (Convai)/.utmp/RelWithDebInfo/3y255q2a/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Projects/UnityProjects/XR Bootcamp/Prototype - Week1 (Convai)/.utmp/RelWithDebInfo/3y255q2a/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Projects/UnityProjects/XR Bootcamp/Prototype - Week1 (Convai)/.utmp/RelWithDebInfo/3y255q2a/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Projects/UnityProjects/XR Bootcamp/Prototype - Week1 (Convai)/.utmp/RelWithDebInfo/3y255q2a/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
