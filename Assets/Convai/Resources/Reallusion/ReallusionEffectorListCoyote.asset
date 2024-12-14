@@ -19,87 +19,53 @@ MonoBehaviour:
   - index: 6
     effectPercentage: 0.3
   ff:
-  - index: 26
-    effectPercentage: 1
-  - index: 21
-    effectPercentage: 0.1
-  - index: 38
-    effectPercentage: 0.1
+  - index: 4
+    effectPercentage: 0.5
+  - index: 6
+    effectPercentage: 0.5
   th:
-  - index: 41
-    effectPercentage: 1
-  - index: 26
-    effectPercentage: 1
   - index: 3
     effectPercentage: 0.2
   - index: 6
     effectPercentage: 0.7
   dd:
-  - index: 41
-    effectPercentage: 1
-  - index: 26
-    effectPercentage: 1
   - index: 3
-    effectPercentage: 0.5
-  - index: 6
     effectPercentage: 0.2
-  - index: 37
+  - index: 6
     effectPercentage: 0.2
   kk:
-  - index: 41
-    effectPercentage: 1
-  - index: 26
-    effectPercentage: 1
   - index: 3
     effectPercentage: 0.5
   - index: 6
     effectPercentage: 0.5
-  - index: 37
-    effectPercentage: 0.1
+  - index: 4
+    effectPercentage: 0.5
   ch:
-  - index: 41
-    effectPercentage: 1
-  - index: 26
-    effectPercentage: 1
   - index: 6
     effectPercentage: 0.6
+  - index: 8
+    effectPercentage: 0.5
   ss:
-  - index: 41
-    effectPercentage: 1
-  - index: 26
-    effectPercentage: 1
   - index: 6
     effectPercentage: 0.7
+  - index: 8
+    effectPercentage: 0.6
   nn:
-  - index: 41
-    effectPercentage: 1
-  - index: 26
-    effectPercentage: 1
   - index: 3
     effectPercentage: 1
-  - index: 37
-    effectPercentage: 0.2
   rr:
   - index: 4
     effectPercentage: 1
-  - index: 38
-    effectPercentage: 0.2
   aa:
   - index: 6
+    effectPercentage: 0.2
+  - index: 1
     effectPercentage: 1
-  - index: 38
-    effectPercentage: 0.5
   e:
   - index: 0
     effectPercentage: 0
   - index: 8
     effectPercentage: 0.8
-  - index: 37
-    effectPercentage: 0.1
-  - index: 54
-    effectPercentage: 0.2
-  - index: 55
-    effectPercentage: 0.2
   ih:
   - index: 1
     effectPercentage: 0.1
@@ -107,8 +73,6 @@ MonoBehaviour:
   - index: 4
     effectPercentage: 1
   - index: 1
-    effectPercentage: 0.1
-  - index: 38
     effectPercentage: 0.1
   ou:
   - index: 4

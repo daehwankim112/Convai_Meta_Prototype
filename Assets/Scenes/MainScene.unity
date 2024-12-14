@@ -434,7 +434,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682676375}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e76943ac7e7394f3e969f0c048b26639, type: 3}
   m_Name: 
@@ -458,7 +458,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682676375}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
   m_Name: 
@@ -1547,11 +1547,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7144932161428712709, guid: bf478bf0be27df844943d95c452671f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 7144932161428712709, guid: bf478bf0be27df844943d95c452671f6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7144932161428712709, guid: bf478bf0be27df844943d95c452671f6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1788,7 +1788,7 @@ MonoBehaviour:
     Tongue:
       Renderer: {fileID: 1290367416}
       VisemeEffectorsList: {fileID: 11400000, guid: 644f7f5163f10274c8d99553dfac543c, type: 2}
-      WeightBounds: {x: 0, y: 1}
+      WeightBounds: {x: 0, y: 100}
     JawBoneEffector: {fileID: 11400000, guid: 085659d4e7314ce409d0327ff10ec295, type: 2}
     TongueBoneEffector: {fileID: 11400000, guid: 4ec6606f21165c04ebd46cbf14447901, type: 2}
     JawBone: {fileID: 1093515016}
@@ -1840,6 +1840,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4317787388212166854, guid: cc0810253005ee04ca68e2f121e131b1, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317787388212166854, guid: cc0810253005ee04ca68e2f121e131b1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317787388212166854, guid: cc0810253005ee04ca68e2f121e131b1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4317787388212166854, guid: cc0810253005ee04ca68e2f121e131b1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1879,6 +1891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5048659422186165661, guid: cc0810253005ee04ca68e2f121e131b1, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8278622f87662a74f9c810c82e1bbc00, type: 2}
     - target: {fileID: 7857637944766601916, guid: cc0810253005ee04ca68e2f121e131b1, type: 3}
       propertyPath: m_WarningMessage
       value: 

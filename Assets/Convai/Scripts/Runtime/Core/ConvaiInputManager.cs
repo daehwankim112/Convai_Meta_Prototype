@@ -202,6 +202,9 @@ namespace Convai.Scripts.Runtime.Core
             {
                 toggleSettings?.Invoke();
             }
+            /*moveVector.x += OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).x;
+            moveVector.y += OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick).y;*/
+            
         }
 
         private static void LockCursor(bool lockState)
